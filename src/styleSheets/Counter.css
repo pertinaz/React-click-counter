@@ -1,0 +1,34 @@
+.counter {
+    height: 150px;
+    font-size: 150px;
+    color: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    border: 1px solid rgb(255, 255, 255);
+    margin-bottom: 15px;
+    transition: transform 0.3s ease, color 0.3s ease; /* Añadido para animaciones suaves */
+  }
+  
+  .counter.animate {
+    transform: scale(1.05); /* Agranda el counter temporalmente */
+    color: rgb(24 44 43); /* Cambia el color temporalmente */
+  }
+  
+  @media (max-width: 768px) {
+    .counter {
+      min-width: 200px;
+      height: 200px;
+      font-size: 120px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .counter {
+      min-width: 150px;
+      height: 150px;
+      font-size: 80px;
+    }
+  }
+  

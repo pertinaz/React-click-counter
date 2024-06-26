@@ -1,0 +1,46 @@
+.App {
+  background-color: rgb(24 44 43);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: inherit;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+
+}
+.App .logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.logo{
+  box-shadow: 0px 3px 10px rgba(0 0 0 / 40%);
+  border-radius: 10px;
+}
+
+.main-container{
+  display: flex;
+  flex-direction: column;
+}
+
+.logo-container{
+  padding: 10px;
+  margin: 10px;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  ñ.logo {
+    animation: logo infinite 20s linear;
+  }
+}
+
+@keyframes logo {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
